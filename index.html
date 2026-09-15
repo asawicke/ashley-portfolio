@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Creative and accessible one-page professional portfolio site with about, projects, resume, and contact sections."
+    />
+    <title>Portfolio | Zach Jordan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/index-DUYXQKCY.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D6Av81B0.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="#about" aria-label="Jump to about section">ZJ</a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#about" data-nav="about">About</a>
+          <a href="#projects" data-nav="projects">Projects</a>
+          <a href="#resume" data-nav="resume">Resume</a>
+        </nav>
+
+        <button class="contact-trigger" type="button" data-open-contact>Contact Me</button>
+      </header>
+
+      <main id="main-content">
+        <section class="hero panel reveal" id="about">
+          <div class="hero-media" aria-hidden="true">
+            <div class="profile-ring">
+              <div class="profile-face">
+                <span>ZJ</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-copy prose">
+            <p class="eyebrow">About</p>
+            <h1>Hey, I'm <span>Zach Jordan.</span> Here you can check out what I'm working on.</h1>
+            <p>
+              I like building things that feel clean, useful, and a little unexpected. This site is
+              designed to stay accessible while still having some visual personality and motion.
+            </p>
+            <p>
+              Scroll for selected projects and a compact resume summary, or use the contact button
+              in the corner to open a message form.
+            </p>
+            <div class="action-row">
+              <a class="button button-primary" href="#projects">View projects</a>
+              <a class="button button-secondary" href="#resume">See resume</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-block" id="projects">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Projects</p>
+            <h2>Three featured projects with enough detail to show range and intent.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="panel project-card reveal">
+              <div class="project-visual gradient-one" aria-hidden="true"></div>
+              <div>
+                <p class="card-label">Project 01</p>
+                <h3>Project Title</h3>
+                <p>
+                  Short summary of what the project does, why it matters, and what you contributed.
+                </p>
+                <div class="tag-row">
+                  <span>Research</span>
+                  <span>UX</span>
+                  <span>Frontend</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel project-card reveal">
+              <div class="project-visual gradient-two" aria-hidden="true"></div>
+              <div>
+                <p class="card-label">Project 02</p>
+                <h3>Project Title</h3>
+                <p>
+                  Another example project entry with room for a screenshot, results, and a link.
+                </p>
+                <div class="tag-row">
+                  <span>Design</span>
+                  <span>JavaScript</span>
+                  <span>Accessibility</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel project-card reveal">
+              <div class="project-visual gradient-three" aria-hidden="true"></div>
+              <div>
+                <p class="card-label">Project 03</p>
+                <h3>Project Title</h3>
+                <p>
+                  A third project example so the portfolio meets the assignment minimum cleanly.
+                </p>
+                <div class="tag-row">
+                  <span>Data</span>
+                  <span>Systems</span>
+                  <span>Visuals</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block" id="resume">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Resume</p>
+            <h2>A native resume section that stays consistent with the rest of the site.</h2>
+          </div>
+
+          <div class="resume-layout">
+            <article class="panel reveal">
+              <p class="card-label">Experience</p>
+              <div class="resume-item">
+                <h3>Role Title</h3>
+                <p class="meta">Organization · Date range</p>
+                <p>
+                  A short description of the work you did, emphasizing outcomes, tools, and impact.
+                </p>
+              </div>
+              <div class="resume-item">
+                <h3>Role Title</h3>
+                <p class="meta">Organization · Date range</p>
+                <p>
+                  Another example entry that will later be swapped for your actual experience.
+                </p>
+              </div>
+            </article>
+
+            <article class="panel reveal panel-surface">
+              <p class="card-label">Education & skills</p>
+              <div class="resume-item">
+                <h3>Education</h3>
+                <p>
+                  University, program, expected graduation, relevant coursework, or certifications.
+                </p>
+              </div>
+              <div class="skill-chips" aria-label="Skills list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Accessibility</span>
+                <span>Problem solving</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Built for a professional portfolio assignment.</p>
+        <p><span id="current-year"></span></p>
+      </footer>
+
+      <dialog class="contact-dialog" aria-labelledby="contact-title" data-contact-dialog>
+        <form class="contact-form" data-contact-form>
+          <div class="dialog-header">
+            <div>
+              <p class="eyebrow">Contact Me</p>
+              <h2 id="contact-title">Send a message</h2>
+            </div>
+            <button class="icon-button" type="button" aria-label="Close contact form" data-close-contact>
+              ×
+            </button>
+          </div>
+
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+
+          <label>
+            Subject
+            <input type="text" name="subject" required />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+
+          <div class="dialog-actions">
+            <button class="button button-secondary" type="button" data-close-contact>Cancel</button>
+            <button class="button button-primary" type="submit">Open email draft</button>
+          </div>
+        </form>
+      </dialog>
+    </div>
+  </body>
+</html>
