@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Creative and accessible one-page professional portfolio site with about, projects, resume, and contact sections."
+    />
+    <title>Portfolio | Ashley Sawicke</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="#about" aria-label="Jump to about section">AS</a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#about" data-nav="about">About</a>
+          <a href="#projects" data-nav="projects">Projects</a>
+          <a href="#resume" data-nav="resume">Resume</a>
+        </nav>
+
+        <button class="contact-trigger" type="button" data-open-contact>Contact Me</button>
+      </header>
+
+      <main id="main-content">
+        <section class="hero panel reveal" id="about">
+          <div class="hero-media" aria-hidden="true">
+            <div class="profile-ring">
+              <img
+                class="profile-photo"
+                src="./IMG_9539.jpg"
+                alt="Ashley Sawicke smiling outdoors"
+                draggable="false"
+              />
+            </div>
+          </div>
+
+          <div class="hero-copy prose">
+            <p class="eyebrow">About</p>
+            <h1>Hey, I'm <span>Ashley Sawicke.</span> Here you can check out what I'm working on.</h1>
+            <p>
+              I’m a University of Michigan computer science student focused on web development,
+              systems, and creative technical work.
+            </p>
+            <div class="action-row">
+              <a class="button button-primary" href="#projects">View projects</a>
+              <a class="button button-secondary" href="#resume">View resume</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-block" id="projects">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Projects</p>
+          </div>
+
+          <div class="project-grid">
+            <article class="panel project-card reveal">
+              <img class="project-image" src="./friut.png" alt="Fruit nutrition app preview" draggable="false" />
+              <div>
+                <p class="card-label">Michigan Data Science Team</p>
+                <h3>Fruit Nutrition Information App</h3>
+                <p>
+                  Designed and trained a convolutional neural network with TensorFlow and Keras on a
+                  curated Kaggle dataset to identify fruit categories in real time.
+                </p>
+                <p>
+                  Processed 5,000+ images with OpenCV and NumPy, using normalization, rotation, and
+                  adaptive contrast adjustments to improve classification performance.
+                </p>
+                <div class="tag-row">
+                  <span>TensorFlow</span>
+                  <span>Keras</span>
+                  <span>OpenCV</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel project-card reveal">
+              <img class="project-image" src="./quantum.png" alt="Quantum UNO project preview" draggable="false" />
+              <div>
+                <p class="card-label">QuantUM</p>
+                <h3>Quantum-Inspired UNO Game</h3>
+                <p>
+                  Directed a team building a Unity-based UNO game with quantum-inspired mechanics like
+                  superposition, entanglement, and quantum circuit gates.
+                </p>
+                <p>
+                  Managed version control and used object-oriented programming principles to create
+                  dynamic gameplay, animations, and card interactions.
+                </p>
+                <div class="tag-row">
+                  <span>Unity</span>
+                  <span>C#</span>
+                  <span>Game Design</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel project-card reveal">
+              <img class="project-image" src="./graph.png" alt="Graph optimization project preview" draggable="false" />
+              <div>
+                <p class="card-label">Academic Project</p>
+                <h3>Graph Optimization Algorithm</h3>
+                <p>
+                  Built a C++ program implementing MST and TSP algorithms to design efficient pathways
+                  for route planning and canal construction scenarios.
+                </p>
+                <p>
+                  Used graphs, distance matrices, recursive search, branch-and-bound, and 2-opt
+                  improvement to balance speed with solution quality across large input sets.
+                </p>
+                <div class="tag-row">
+                  <span>C++</span>
+                  <span>Algorithms</span>
+                  <span>Optimization</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel project-card reveal">
+              <img class="project-image" src="./spotify.png" alt="Spotify artist gender analysis output preview" draggable="false" />
+              <div>
+                <p class="card-label">Independent Project</p>
+                <h3>
+                  <a href="https://github.com/asawicke/spotify-artist-gender-analysis" target="_blank" rel="noopener noreferrer">
+                    Spotify Artist Gender Analysis
+                  </a>
+                </h3>
+                <p>
+                  Analyzed gender representation among artists on popular Spotify playlists by pulling
+                  track and artist data through the Spotify Web API and estimating artist gender from
+                  first names with the Genderize API.
+                </p>
+                <p>
+                  Aggregated results across editorial playlists to surface a clear gender imbalance,
+                  with male artists appearing nearly twice as often as female artists.
+                </p>
+                <div class="tag-row">
+                  <span>Python</span>
+                  <span>Spotify API</span>
+                  <span>Data Analysis</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block" id="resume">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Resume</p>
+          </div>
+
+          <div class="resume-layout">
+            <article class="panel reveal resume-card-wide">
+              <p class="card-label">Education</p>
+              <div class="resume-item">
+                <h3>University of Michigan, College of Engineering</h3>
+                <p class="meta">Ann Arbor, MI · GPA 3.5 · May 2027</p>
+                <ul class="bullet-list">
+                  <li>BSE Computer Science</li>
+                  <li>Minor in Philosophy (College of Literature, Science, and the Arts)</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h3>Relevant Coursework</h3>
+                <ul class="bullet-list">
+                  <li>Data Structures and Algorithms</li>
+                  <li>Web Systems</li>
+                  <li>Computer Security</li>
+                  <li>Machine Learning</li>
+                  <li>Computer Organization</li>
+                  <li>Statistics and Data Analysis</li>
+                  <li>Quantum Information Science (TA)</li>
+                  <li>Computing Pragmatics</li>
+                  <li>Physics I &amp; II</li>
+                  <li>Chemistry</li>
+                </ul>
+              </div>
+              <div class="skill-chips" aria-label="Technical skills list">
+                <span>C++</span>
+                <span>C</span>
+                <span>Python</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>SQL</span>
+              </div>
+            </article>
+
+            <article class="panel reveal resume-card-wide panel-surface">
+              <p class="card-label">Work Experience</p>
+              <div class="resume-item">
+                <h3>IT Control Systems Developer Intern</h3>
+                <p class="meta">Corning Incorporated · Wilmington, NC · May 2026 – August 2026</p>
+                <ul class="bullet-list">
+                  <li>Established the Glassmaking Operations Toolkit, a network of SharePoint sites that consolidated shift supervisor and technician workflow tools.</li>
+                  <li>Removed 4+ time-consuming steps and enabled mobile access across the production floor.</li>
+                  <li>Debugged and prepared a VB6 die label printer application for production floor deployment.</li>
+                  <li>Refined printer integration, configuration handling, and conditional UI logic.</li>
+                  <li>Developed a VB6 barcode scanning feature for the auto ware flow checkout GUI.</li>
+                  <li>Replaced manual keypad case ID entry with a configurable phased rollout.</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h3>Frontend Web Developer Intern</h3>
+                <p class="meta">Cynerge Consulting Incorporated · Pontiac, MI · May 2024 – December 2024</p>
+                <ul class="bullet-list">
+                  <li>Engineered custom WordPress components and dynamic UI elements using PHP, HTML, and CSS.</li>
+                  <li>Improved modularity and development efficiency by 30%.</li>
+                  <li>Revamped a government-affiliated client website to create a more intuitive and dynamic environment.</li>
+                  <li>Improved navigation and accessibility and increased viewership by 20%.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="panel reveal resume-card-wide">
+              <p class="card-label">Extracurricular Projects</p>
+              <div class="resume-item">
+                <h3>Michigan Data Science Team</h3>
+                <p class="meta">Software Developer · September 2024 – Present</p>
+                <ul class="bullet-list">
+                  <li>Created a fruit nutrition information app by training a convolutional neural network with TensorFlow and Keras.</li>
+                  <li>Reached 92% classification accuracy across 30+ fruit categories.</li>
+                  <li>Preprocessed 5,000+ fruit images using OpenCV and NumPy.</li>
+                  <li>Improved model effectiveness and reduced misclassification rates by approximately 18%.</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h3>QuantUM</h3>
+                <p class="meta">Project Team Leader / Game Developer · January 2025 – Present</p>
+                <ul class="bullet-list">
+                  <li>Directed a team building a Unity-based UNO game with quantum-inspired mechanics.</li>
+                  <li>Implemented mechanics like superposition, entanglement, and quantum circuit gates.</li>
+                  <li>Managed version control and used object-oriented programming principles.</li>
+                  <li>Leveraged Unity animation systems and rendering pipeline for dynamic gameplay.</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h3>MRacing Formula SAE</h3>
+                <p class="meta">Autonomous Division Software Developer · September 2023 – December 2024</p>
+                <ul class="bullet-list">
+                  <li>Engineered a covariance matrix for sensor fusion.</li>
+                  <li>Improved real-time environmental modeling for perception accuracy.</li>
+                  <li>Installed C++ and ROS data processing pipelines.</li>
+                  <li>Simulated multi-sensor data streams in Rviz.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="panel reveal resume-card-wide panel-surface">
+              <p class="card-label">Academic Projects</p>
+              <div class="resume-item">
+                <h3>Graph Optimization Algorithm</h3>
+                <p class="meta">C++ · April 2025</p>
+                <ul class="bullet-list">
+                  <li>Built a C++ program implementing MST and TSP algorithms.</li>
+                  <li>Designed efficient pathways for route planning and canal construction scenarios.</li>
+                  <li>Used graphs, distance matrices, recursive search, branch-and-bound, and 2-opt improvement.</li>
+                  <li>Balanced speed with solution quality across large input sets.</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h3>Machine Learning Classifier</h3>
+                <p class="meta">C++ · April 2024</p>
+                <ul class="bullet-list">
+                  <li>Developed a probabilistic NLP model in C++ to classify 1,000+ discussion posts.</li>
+                  <li>Achieved over 90% accuracy with refined linguistic feature extraction.</li>
+                  <li>Optimized runtime with recursive functions, binary trees, and maps.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="panel reveal resume-card-wide panel-surface">
+              <p class="card-label">Activities</p>
+              <div class="resume-item">
+                <h3>Activities & Interests</h3>
+                <ul class="bullet-list">
+                  <li>Girls in Computer Science and Electrical Engineering</li>
+                  <li>Society of Women Engineers</li>
+                  <li>Michigan Student Artificial Intelligence Lab</li>
+                  <li>Michigan Undergrad Philosophy Journal</li>
+                  <li>Michigan Survivor Club</li>
+                  <li>Film studies, hiking, running, philosophy, and French language and culture</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p><span id="current-year"></span></p>
+      </footer>
+
+      <dialog class="contact-dialog" aria-labelledby="contact-title" data-contact-dialog>
+        <form class="contact-form" data-contact-form>
+          <div class="dialog-header">
+            <div>
+              <p class="eyebrow">Contact Me</p>
+              <h2 id="contact-title">Send a message</h2>
+            </div>
+            <button class="icon-button" type="button" aria-label="Close contact form" data-close-contact>
+              ×
+            </button>
+          </div>
+
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+
+          <label>
+            Subject
+            <input type="text" name="subject" required />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+
+          <div class="dialog-actions">
+            <button class="button button-secondary" type="button" data-close-contact>Cancel</button>
+            <button class="button button-primary" type="submit">Open email draft</button>
+          </div>
+        </form>
+      </dialog>
+    </div>
+  </body>
+</html>
