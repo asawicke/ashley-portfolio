@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <script type="module" src="/src/main.js"></script>
@@ -61,11 +61,11 @@
 
         <section class="section-block" id="projects">
           <div class="section-heading reveal">
-            <p class="eyebrow">Projects</p>
+            <h2 class="eyebrow">Projects</h2>
           </div>
 
           <div class="project-grid">
-            <article class="panel project-card reveal">
+            <article class="panel project-card reveal" id="project-fruit-nutrition-app">
               <img class="project-image" src="./friut.png" alt="Fruit nutrition app preview" draggable="false" />
               <div>
                 <p class="card-label">Michigan Data Science Team</p>
@@ -86,7 +86,7 @@
               </div>
             </article>
 
-            <article class="panel project-card reveal">
+            <article class="panel project-card reveal" id="project-quantum-uno">
               <img class="project-image" src="./quantum.png" alt="Quantum UNO project preview" draggable="false" />
               <div>
                 <p class="card-label">QuantUM</p>
@@ -107,7 +107,7 @@
               </div>
             </article>
 
-            <article class="panel project-card reveal">
+            <article class="panel project-card reveal" id="project-graph-optimization">
               <img class="project-image" src="./graph.png" alt="Graph optimization project preview" draggable="false" />
               <div>
                 <p class="card-label">Academic Project</p>
@@ -158,14 +158,14 @@
 
         <section class="section-block" id="resume">
           <div class="section-heading reveal">
-            <p class="eyebrow">Resume</p>
+            <h2 class="eyebrow">Resume</h2>
           </div>
 
           <div class="resume-layout">
             <article class="panel reveal resume-card-wide">
-              <p class="card-label">Education</p>
+              <h3 class="card-label">Education</h3>
               <div class="resume-item">
-                <h3>University of Michigan, College of Engineering</h3>
+                <h4>University of Michigan, College of Engineering</h4>
                 <p class="meta">Ann Arbor, MI · GPA 3.5 · May 2027</p>
                 <ul class="bullet-list">
                   <li>BSE Computer Science</li>
@@ -173,7 +173,7 @@
                 </ul>
               </div>
               <div class="resume-item">
-                <h3>Relevant Coursework</h3>
+                <h4>Relevant Coursework</h4>
                 <ul class="bullet-list">
                   <li>Data Structures and Algorithms</li>
                   <li>Web Systems</li>
@@ -200,9 +200,9 @@
             </article>
 
             <article class="panel reveal resume-card-wide panel-surface">
-              <p class="card-label">Work Experience</p>
+              <h3 class="card-label">Work Experience</h3>
               <div class="resume-item">
-                <h3>IT Control Systems Developer Intern</h3>
+                <h4>IT Control Systems Developer Intern</h4>
                 <p class="meta">Corning Incorporated · Wilmington, NC · May 2026 – August 2026</p>
                 <ul class="bullet-list">
                   <li>Established the Glassmaking Operations Toolkit, a network of SharePoint sites that consolidated shift supervisor and technician workflow tools.</li>
@@ -214,7 +214,7 @@
                 </ul>
               </div>
               <div class="resume-item">
-                <h3>Frontend Web Developer Intern</h3>
+                <h4>Frontend Web Developer Intern</h4>
                 <p class="meta">Cynerge Consulting Incorporated · Pontiac, MI · May 2024 – December 2024</p>
                 <ul class="bullet-list">
                   <li>Engineered custom WordPress components and dynamic UI elements using PHP, HTML, and CSS.</li>
@@ -226,9 +226,9 @@
             </article>
 
             <article class="panel reveal resume-card-wide">
-              <p class="card-label">Extracurricular Projects</p>
+              <h3 class="card-label">Extracurricular Projects</h3>
               <div class="resume-item">
-                <h3>Michigan Data Science Team</h3>
+                <h4><a href="#project-fruit-nutrition-app">Michigan Data Science Team</a></h4>
                 <p class="meta">Software Developer · September 2024 – Present</p>
                 <ul class="bullet-list">
                   <li>Created a fruit nutrition information app by training a convolutional neural network with TensorFlow and Keras.</li>
@@ -238,7 +238,7 @@
                 </ul>
               </div>
               <div class="resume-item">
-                <h3>QuantUM</h3>
+                <h4><a href="#project-quantum-uno">QuantUM</a></h4>
                 <p class="meta">Project Team Leader / Game Developer · January 2025 – Present</p>
                 <ul class="bullet-list">
                   <li>Directed a team building a Unity-based UNO game with quantum-inspired mechanics.</li>
@@ -248,7 +248,7 @@
                 </ul>
               </div>
               <div class="resume-item">
-                <h3>MRacing Formula SAE</h3>
+                <h4>MRacing Formula SAE</h4>
                 <p class="meta">Autonomous Division Software Developer · September 2023 – December 2024</p>
                 <ul class="bullet-list">
                   <li>Engineered a covariance matrix for sensor fusion.</li>
@@ -260,9 +260,9 @@
             </article>
 
             <article class="panel reveal resume-card-wide panel-surface">
-              <p class="card-label">Academic Projects</p>
+              <h3 class="card-label">Academic Projects</h3>
               <div class="resume-item">
-                <h3>Graph Optimization Algorithm</h3>
+                <h4><a href="#project-graph-optimization">Graph Optimization Algorithm</a></h4>
                 <p class="meta">C++ · April 2025</p>
                 <ul class="bullet-list">
                   <li>Built a C++ program implementing MST and TSP algorithms.</li>
@@ -272,7 +272,7 @@
                 </ul>
               </div>
               <div class="resume-item">
-                <h3>Machine Learning Classifier</h3>
+                <h4>Machine Learning Classifier</h4>
                 <p class="meta">C++ · April 2024</p>
                 <ul class="bullet-list">
                   <li>Developed a probabilistic NLP model in C++ to classify 1,000+ discussion posts.</li>
@@ -283,9 +283,9 @@
             </article>
 
             <article class="panel reveal resume-card-wide panel-surface">
-              <p class="card-label">Activities</p>
+              <h3 class="card-label">Activities</h3>
               <div class="resume-item">
-                <h3>Activities & Interests</h3>
+                <h4>Activities & Interests</h4>
                 <ul class="bullet-list">
                   <li>Girls in Computer Science and Electrical Engineering</li>
                   <li>Society of Women Engineers</li>

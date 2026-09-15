@@ -31,3 +31,12 @@
 - [ ] Add live links for Fruit Nutrition App, QuantUM, and Graph Optimization if any become available.
 - [x] Added Spotify Artist Gender Analysis project.
 - [ ] Decide which three (or four) projects should be the final featured set.
+
+## Visual Restyle (faded vintage Americana direction)
+- [x] New palette: cream/bone base, warm-charcoal text, dusty rose + faded periwinkle accents, sage for small markers only — defined as CSS custom properties in styles.css.
+- [x] Fraunces (headings) + Inter (body) type pairing; justified body text with hyphens: auto.
+- [x] Subtle film-grain + vignette background texture; faint section-divider marks between sections.
+- [x] Fixed a real heading hierarchy: h1 (hero) > h2 (Projects/Resume) > h3 (project titles, resume subsections) > h4 (resume entries) — previously several section/subsection labels were just styled paragraphs.
+- [x] Linked resume entries (Michigan Data Science Team, QuantUM, Graph Optimization Algorithm) to their matching project cards via anchor ids.
+- [x] Low-intensity sepia/grayscale photo filter applied consistently to profile photo and project screenshots for a cohesive faded tone.
+- [ ] Consider adding a resume entry for the Spotify Artist Gender Analysis project so it also cross-links.
